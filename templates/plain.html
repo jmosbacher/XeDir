@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <!-- <link href="/static/starter-template.css" rel="stylesheet"> -->
+
+  </head>
+  <body>
+
+    <nav class="navbar bg-inverse">
+
+  <div class="d-inline-flex" style="width:100%;">
+    <a class="navbar-brand" href="#">
+  <img src="/static/ninja_turtle.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  Ninja
+  </a>
+   <ul class="nav">
+      <li class="nav-item">
+         <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+   </ul>
+  </div>
+  </nav>
+  <main role="main">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header">Lab Spycam</div>
+              <div class="card-body">
+                <!-- <h5 class="card-title">Lab Spycam</h5> -->
+                <img src="http://xecamera.weizmann.ac.il/snapshot.cgi?user=xenon&amp;pwd=1234&amp;t=1516185933128" width="320" height="240" onload="setTimeout(function() {src = src.substring(0, (src.lastIndexOf(&quot;t=&quot;)+2))+(new Date()).getTime()}, 1000)" onerror="setTimeout(function() {src = src.substring(0, (src.lastIndexOf(&quot;t=&quot;)+2))+(new Date()).getTime()}, 5000)" alt="">
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header">Sphere Cam</div>
+              <div class="card-body">
+                <!-- <h5 class="card-title">Sphere Cam</h5> -->
+                <img src="http://132.77.45.80:1234/video.mjpg?ds=1" align="center" width="320" height="240" scrolling="no" frameborder="no" marginheight="0px" <="" img="">
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="jumbotron text-center">
+        <div class="container-fluid">
+          <div class="card text-center">
+              <div class="card-header">
+              PMT Rings
+              </div>
+              {{bkscript| safe}}
+              <div class="card-footer text-muted">
+
+              </div>
+          </div>
+
+        </div>
+
+
+
+  </section>
+  </main>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
