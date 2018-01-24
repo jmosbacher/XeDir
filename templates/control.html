@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="jumbotron text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-header">Lab Spycam</div>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Lab Spycam</h5> -->
+            <img src="http://xecamera.weizmann.ac.il/snapshot.cgi?user=xenon&amp;pwd=1234&amp;t=1516185933128" width="320" height="240" onload="setTimeout(function() {src = src.substring(0, (src.lastIndexOf(&quot;t=&quot;)+2))+(new Date()).getTime()}, 1000)" onerror="setTimeout(function() {src = src.substring(0, (src.lastIndexOf(&quot;t=&quot;)+2))+(new Date()).getTime()}, 5000)" alt="">
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+          <div class="card-footer"></div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-header">Sphere Cam</div>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Sphere Cam</h5> -->
+            <img src="http://132.77.45.80:1234/video.mjpg?ds=1" align="center" width="320" height="240" scrolling="no" frameborder="no" marginheight="0px" <="" img="">
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+          <div class="card-footer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="jumbotron text-center">
+    <div class="container-fluid">
+      <div class="card text-center">
+          <div class="card-header">
+          PMT Rings
+          </div>
+          {{bkscript| safe}}
+          <div class="card-footer text-muted">
+
+          </div>
+      </div>
+
+    </div>
+</section>
+{% endblock %}

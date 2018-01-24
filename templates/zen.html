@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block style %}
+<link href="/static/zen.css" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<section class="jumbotron text-center">
+    <div class="container-fluid">
+      <div class="card text-center">
+          <div class="card-header"><h1>Zen of Python</h1></div>
+          <ol class="list-group">
+            {% for line in lines %}
+            <li class="list-group-item"><p><strong>{{loop.index|string +")        "}}</strong>{{line}}</p></li>
+            {% endfor %}
+          </ol>
+          <div class="card-footer text-muted">
+          </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
